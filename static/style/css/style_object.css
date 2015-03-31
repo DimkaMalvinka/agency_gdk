@@ -1,0 +1,152 @@
+
+body {
+}
+
+#cco{
+	
+	width: 100%;
+	margin-top: 16px;
+}
+
+.cco{
+	
+	margin: 0 auto;
+	width: 940px;
+	height: 400px;
+}
+
+
+.cco h2{
+	margin-left: 10px;
+	color: #008B00;
+	margin-bottom: 17px;
+	border-bottom: 1px solid #006400;
+}
+
+.cco h4{
+		margin-left: 10px;
+}
+
+.cco ul{
+	float: right;
+	margin-top: -12px;
+}
+
+.cco ul li{
+	margin-bottom: 3px;
+
+}
+
+.cco li a{
+  color: #006400;
+  text-align: right;
+  font-size: 15px;
+}
+
+.cco ul li a:hover{
+	color: #000;	
+}
+
+
+.images{
+
+	float: left;
+}
+
+.inform{
+/*	float: right;
+	width: 587px;*/
+
+	position: absolute;
+ left: 600px;
+  top: 270px;
+} 	
+
+.inform p{
+	font-size: 17px;
+}
+
+.inform p span{
+	color: #4F4F4F;
+	font-weight: bold;
+}
+
+.conta{
+  position: absolute;
+ left: 600px;
+  top: 534px;
+}
+
+.conta img{
+	margin: -5px 11px;
+}
+
+.conta span{
+	color: #006400;
+	font-size: 17px;
+}
+
+.conta em a{
+	color: #006400;
+	font-size: 17px;
+	border-bottom: 1px dashed #4F4F4F;
+	  margin: -7px 4px;
+}
+
+.cco h4 a:hover{
+	color: #BEBEBE;
+}
+
+.photo{
+	list-style: none;
+  margin: 0px auto;
+  width: 960px;
+}
+
+.photo li{
+float: left;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  display: block;
+
+	width: 300px;
+	height: 270px;
+}
+
+.photo li div{
+	  display: block;
+}
+
+.photo li a{
+	color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+
+.obj{
+  margin: 0 auto;
+  width: 940px;
+
+   border: 1px solid #D3D3D3;
+}
+
+.obj h4{
+
+background: rgba(211,211,211,0.3);
+height: 30px;
+
+}
+
+
+
+.opus{
+	background: #fff;
+	padding: 20px ;
+}
+
+
+#pushh{
+	margin-top: 60px;
+
+}

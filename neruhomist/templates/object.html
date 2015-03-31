@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>Delphic</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/static/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/static/style/css/style_object.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/static/photoVeiwer.css">
+<script type="text/javascript" src="/static/style/js/jquery-1.5.min.js"></script>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" /><![endif]-->
+<script type="text/javascript" src="/static/photoViewer.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+var pv = new PhotoViewer('photoViewer'); 
+});
+</script>
+</head>
+<body>
+<div id="container">
+  <!-- Begin Header Wrapper -->
+  <div id="page-top">
+    <div id="header-wrapper">
+      <!-- Begin Header -->
+      <div class="header">
+          <div id="header">
+            <div id="logo"><a href="/"><img src="/static/style/images/logo().png" alt="" style="  margin-top: 17px;"  /></a></div>
+                <div class="logo_text">
+                  <h1> Продаж нерухомості</h1>
+                  <h1> в Хмельницькому</h1>
+                </div>
+
+                <div class="header-contacts">
+                  <span>Контакты</span> 
+                  <div class="phone">
+                    <i></i>
+                    <span>(098)</span> 233 70 00
+                  </div>
+                  <a href="/" class="order-call trans-opacity js_popup">замовити зворотній дзвінок</a><br>
+                  <a href="/" class="skype">
+                    <i></i>Kyivagent
+                  </a>
+                </div>
+          </div>
+        <!-- Logo -->
+        <!-- Begin Menu -->
+         <div id="menu-wrapper">
+         <div class="iner">   
+            <ul>
+              <li><a href="/about/" class="selected">Про нас</a></li>
+              <li><a href="/poslugi/">Послуги агенції</a></li>
+              <li><a href="/">Пошук нерухомості</a></li>
+              <li><a href="/karta/">Знайти на мапі</a></li>
+              <li><a href="/contacts/">Контакти</a></li>
+            </ul>
+          </div>      
+        <!-- End Menu -->
+         </div>
+      </div>
+      <!-- End Header -->
+    </div>
+  </div>
+  </div>
+  <!-- End Header Wrapper -->
+
+  <!-- End Wrapper -->
+ 
+
+<div id="cco">
+  <div class="cco">
+
+  <h2> {{ house.adress }} </h2>
+  
+  
+  
+
+  
+      
+
+      <div class="images">             
+
+            <div class="one-fourth"><a href="/"><img src="/static{{ house.images.first.image.url }}" alt="" /></a>
+            </div>
+      </div>
+
+      <div class="inform">
+
+              <p><span>Вид пропоиції:</span> {{ house.sell_type }}</p>
+              <p><span>Тип нерухомості:</span> {{ house.house_type }}</p>
+              <p><span>Ціна:</span> {{ house.price }}</p>
+              <p><span>Площа:</span> {{ house.ploshcha }}</p>
+              <p><span>Кімнат:</span> {{ house.room_count }}</p>
+              <p><span>Кількість поверхів:</span> {{ house.floor_count }}</p>
+      </div> 
+
+      <div class="conta">
+          <p><img src="/static/style/images/phone-green.png"> 
+            <span>{{ house.rieltor_tel }}</span> </p>
+          <p><img src="/static/style/images/user-green.png">
+            <em><a href="/">Зв'язатися з менеджером</em></a>  </p>        
+      </div>
+
+      </div>
+</div>
+      
+  <div class="obj">
+        <h4>Опис об'єкта</h4>
+        <div class="opus">  {{ house.about }}</div>
+
+      </div>
+
+      <div class="photo">
+        <div class="photo-list photoViewer">
+        <ul>
+           {% for image in house.images.all %}
+              
+          <li>
+            <div class="imag">
+              <img src="/static{{ image.image.url }}" alt="">
+              
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        </div>
+      </div>
+
+
+        
+
+
+
+
+
+    
+
+
+
+
+ <div class="clearfix"></div> 
+  
+  <div id="pushh">
+    <div class="iner">
+ 
+     <div class="fleft ">
+          <a href="/" class="fleft logofoot"></a>
+          <div class="fleft sepleft"></div>
+         
+                <div class="fleft footer-contacts">
+                  <div class="title">Безкоштовна бронь</div>
+             
+                  <div class="phone">
+                    <i></i>
+                    <span>(098)</span> 233 70 00
+                  </div>
+
+                  <a href="/" class="order-call trans-opacity js_popup">Замовити зворотній двінок</a>
+                  <a href="/" class="skype">
+                    <i></i>Kyivagent</a>
+               </div>
+
+         <div class="fleft sepleft"></div>
+           <div class="fleft footer-menu">
+                <ul>
+                  <li><a href="/">Для агенцій</a></li>
+                  <li><a href="/">Для партнерів</a></li>
+                  <li><a href="/">Як забронювати</a></li>
+                  <li><a href="/">Публічна оферта</a></li>
+                  <li><a href="/">Положення про конфеденційність</a></li>
+                  <li><a href="/">Правила та умови</a></li>
+                </ul>
+            </div>
+
+          <div class="fleft sepleft"></div>
+            <div class="fleft footer-about">
+                  <ul>
+                    <li><a href="/">Про нас</a></li>
+                    <li><a href="/">Контакти</a></li>
+                    <li><a href="/">Знайти на мапі</a></li>
+                  </ul>
+                  <a href="/" class="soclink vk trans-opacity"></a>
+                  <a href="/" class="soclink odno trans-opacity"></a>
+                  <a href="/" class="soclink face trans-opacity"></a>
+            </div>      
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+  <!-- Begin Footer -->
+  <div id="footer-wrapper">
+    <div id="footer">
+      <div id="footer-content">
+        <!-- Begin Copyright -->
+        <div id="copyright">
+          <p>Copyright &copy; Ivan Kozachok & Taya Loran & Dima Dzubiy</p>
+        </div>
+        <!-- End Copyright -->
+        <!-- Begin Social Icons -->
+            <div id="socials">
+              <ul>
+                <li><a href="/"><img src="/static/style/images/icon-rss.png" alt="" /></a></li>
+                <li><a href="/"><img src="/static/style/images/icon-twitter.png" alt="" /></a></li>
+                <li><a href="/"><img src="/static/style/images/icon-dribble.png" alt="" /></a></li>
+                <li><a href="/"><img src="/static/style/images/icon-tumblr.png" alt="" /></a></li>
+                <li><a href="/"><img src="/static/style/images/icon-flickr.png" alt="" /></a></li>
+                <li><a href="/"><img src="/static/style/images/icon-facebook.png" alt="" /></a></li>
+              </ul>
+            </div>
+        <!-- End Social Icons -->
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+</div>
+</body>
+</html>
