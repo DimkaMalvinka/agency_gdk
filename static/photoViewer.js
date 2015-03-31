@@ -100,7 +100,7 @@ PhotoViewer.prototype = {
             newHeight,
             ratio,
             maxWidth = 850,
-            maxHeight = 650;
+            maxHeight = 570;
 
         if (width > height)
             ratio = maxWidth / width;
